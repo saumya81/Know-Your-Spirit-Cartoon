@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spirit Animal
+      </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+              $('button').click(function(){
+                  const a=$('#nameid').val();
+                  
+                  $('#img').attr('src',`https://joeschmoe.io/api/v1/${a}`);
+                  
+                  
+              }) ;         
+                        
+                        });
+      
+      </script>
+    </head>
+    
+    <body>
+    <section>
+        <div class="body1">
+       <center><h1> WHAT IS YOUR SPIRIT CARTOON</h1> 
+        <div class="center">
+        <div class="details">
+            <h3><label>ENTER YOUR NAME :</label><br><input type="text" name="name" id="nameid"><br><br>
+            <label>ENTER YOUR FAVORITE NUMBER :</label></h3><br>
+            <input type="text" name="no" id="no"><br><br>
+            <div class="imgdiv">
+                <img src="s2.jpg" width="200" height="200" id="img">
+            </div>
+            <button id="btn"> Click me</button>
+        
+        </div>
+        </div></center>
+            </div>
+        </section>
+    
+    
+    </body>
+</html>
